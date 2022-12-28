@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Contact</title>
+  </head>
+  <body>
+
+      <h1> This is Contact page</h1>
+
+      <h2> Form</h2>
+      <form class="" action="{% url 'result' %}" method="">
+        {% csrf_token %}
+        <!-- for security -->
+        <p>Enter name : </p> <input type="text" name="user_ip" >
+        <!-- this "name" is used to get the user ip dynamically in views.py -->
+        <p> Enter a number to be multiplied by 100 : </p> <input type="text" name="num_ip">
+         <br> <br>
+        <input type="submit" name="" value="Submit">
+
+      </form>
+<br><br>
+      <a href="{% url 'home' %}">Go back to Home</a>
+
+  </body>
+</html>

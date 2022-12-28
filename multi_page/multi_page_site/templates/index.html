@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Home</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'main.css' %}">
+    <!-- These 2 lines to link css -->
+
+  </head>
+  <body>
+
+    <h1> This is Home page</h1>
+
+    <ul>
+      <li> <a href="{% url 'contact' %}"> Contact</a> </li>
+      <li> <a href="{% url 'about' %}"> About </a> </li>
+      <!-- This is to create links to other html pgs -->
+    </ul>
+<br>
+    <button onclick="buttonFunc()"> Click to make bg green</button>
+    <!-- js functionality -->
+<br><br>
+    <img src="{% static 'coffee.jpg' %}" alt="">
+
+
+    <script type="text/javascript" src="{% static 'main.js' %}"></script>
+    <!-- This to link js -->
+
+  </body>
+</html>
